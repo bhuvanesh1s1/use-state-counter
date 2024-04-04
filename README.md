@@ -22,5 +22,9 @@ npm run dev
 ### Objectives:
 
 - Using useState react hook
-- Adding functionalities to increment or decrement or increment by 5
+- Adding functionalities to
+  - increment
+  - decrement
+  - increment by 5 and
+  - reset
 - Use starter directory to add the functionalities, refer to final directory for a working a solution
