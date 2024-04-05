@@ -32,6 +32,9 @@ npm run dev
 #### Outputs
 
 1. Counter App
+
    ![counter app](./assets/counter-app.png)
+
 2. Slider App
+
    ![slider app](./assets/slider-carousal-app.png)
