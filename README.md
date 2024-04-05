@@ -40,4 +40,4 @@ npm run dev
 
 2. Slider App
 
-   ![slider app](./assets/slider-carousal-app.png)
+   ![slider app](./assets/slider-carousel-app.png)

@@ -14,39 +14,42 @@ const items = [
 function App() {
   const [index, setIndex] = useState(0);
   return (
-    <main className={styles.app}>
-      <section className={styles.wrapper}>
-        <section className={styles.slider}>
-          <button
-            className={styles.buttonLeft}
-            onClick={() =>
-              setIndex((idx) => (idx > 0 ? idx - 1 : items.length - 1))
-            }
-          >
-            <FaChevronLeft className={styles.icon} />
-          </button>
-          <img src={items[index]} alt="banner-img" />
-          <button
-            className={styles.buttonRight}
-            onClick={() =>
-              setIndex((idx) => (idx < items.length - 1 ? idx + 1 : 0))
-            }
-          >
-            <FaChevronRight className={styles.icon} />
-          </button>
+    <main className={styles.mainWrapper}>
+      <h1>Carousel App</h1>
+      <section className={styles.app}>
+        <section className={styles.wrapper}>
+          <div className={styles.slider}>
+            <button
+              className={styles.buttonLeft}
+              onClick={() =>
+                setIndex((idx) => (idx > 0 ? idx - 1 : items.length - 1))
+              }
+            >
+              <FaChevronLeft className={styles.icon} />
+            </button>
+            <img src={items[index]} alt="banner-img" />
+            <button
+              className={styles.buttonRight}
+              onClick={() =>
+                setIndex((idx) => (idx < items.length - 1 ? idx + 1 : 0))
+              }
+            >
+              <FaChevronRight className={styles.icon} />
+            </button>
+          </div>
+          <ul className={styles.container}>
+            {items.map((item, idx) => (
+              <li key={idx}>
+                <img
+                  src={item}
+                  className={idx === index ? styles.active : styles.inactive}
+                  alt="images"
+                  onClick={() => setIndex(idx)}
+                />
+              </li>
+            ))}
+          </ul>
         </section>
-        <ul className={styles.container}>
-          {items.map((item, idx) => (
-            <li key={idx}>
-              <img
-                src={item}
-                className={idx === index ? styles.active : styles.inactive}
-                alt="images"
-                onClick={() => setIndex(idx)}
-              />
-            </li>
-          ))}
-        </ul>
       </section>
     </main>
   );
