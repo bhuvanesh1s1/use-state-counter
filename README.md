@@ -1,4 +1,4 @@
-# Counter App using useState hook
+# Apps using useState hook
 
 ## Initializing & starting the app
 
@@ -28,3 +28,10 @@ npm run dev
   - increment by 5 and
   - reset
 - Use starter directory to add the functionalities, refer to final directory for a working a solution
+
+#### Outputs
+
+1. Counter App
+   ![counter app](./assets/counter-app.png)
+2. Slider App
+   ![slider app](./assets/slider-carousal-app.png)
