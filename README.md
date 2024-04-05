@@ -22,11 +22,14 @@ npm run dev
 ### Objectives:
 
 - Using useState react hook
-- Adding functionalities to
+- Adding functionalities to Counter App
   - increment
   - decrement
   - increment by 5 and
   - reset
+- Add functionalities to Slider App
+  - add buttons to slide images to left or right
+  - add images at the bottom of the main image and then clicking the image update it to the selected image index
 - Use starter directory to add the functionalities, refer to final directory for a working a solution
 
 #### Outputs
